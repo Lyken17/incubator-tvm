@@ -15,7 +15,6 @@ jobs:
       run: |
         git submodule update --init --recursive
         git submodule update --recursive --remote
-        sudo apt install cmake -y 
         mkdir build && cd build
         cmake ..
         make -j8
